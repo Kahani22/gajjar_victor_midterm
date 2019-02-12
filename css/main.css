@@ -47,6 +47,55 @@ h2
 	height: 650px;
 }
 
+#anim
+{
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: relative;
+	width: 1366px;
+	height: 200px;
+	-webkit-animation: bird 5s infinite;
+			animation: bird 5s infinite;
+	-webkit-animation-timing-function: ease-in;
+			animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes bird
+{
+	0%{
+		background-image: url('../assets/animation-sequence/frame1.png');
+	}
+	5%{
+		background-image: url('../assets/animation-sequence/frame2.png');
+	}
+	10%{
+		background-image: url('../assets/animation-sequence/frame3.png');
+	}
+	15%{
+		background-image: url('../assets/animation-sequence/frame4.png');
+	}
+	20%{
+		background-image: url('../assets/animation-sequence/frame5.png');
+	}
+	25%{
+		background-image: url('../assets/animation-sequence/frame7.png');
+	}
+	30%{
+		background-image: url('../assets/animation-sequence/frame8.png');
+	}
+	35%{
+		background-image: url('../assets/animation-sequence/frame8.png');
+	}
+	45%{
+		background-image: url('../assets/animation-sequence/frame8.png');
+		opacity: 0;
+	}
+	100%{
+		background-image: url('../assets/animation-sequence/frame8.png');
+		opacity: 0;
+	}
+}
+
 #homeHeader1
 {
 	display: flex;
@@ -114,7 +163,7 @@ h2
 	position: relative;
 	height: 220px;
 	width: 800px;
-	margin-top: 240px;
+	margin-top: 40px;
 }
 
 #homeText
