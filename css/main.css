@@ -47,6 +47,55 @@ h2
 	height: 650px;
 }
 
+#anim
+{
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: relative;
+	width: 1366px;
+	height: 200px;
+	-webkit-animation: bird 5s infinite;
+			animation: bird 5s infinite;
+	-webkit-animation-timing-function: ease-in;
+			animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes bird
+{
+	0%{
+		background-image: url('../assets/animation-sequence/frame1.png');
+	}
+	5%{
+		background-image: url('../assets/animation-sequence/frame2.png');
+	}
+	10%{
+		background-image: url('../assets/animation-sequence/frame3.png');
+	}
+	15%{
+		background-image: url('../assets/animation-sequence/frame4.png');
+	}
+	20%{
+		background-image: url('../assets/animation-sequence/frame5.png');
+	}
+	25%{
+		background-image: url('../assets/animation-sequence/frame7.png');
+	}
+	30%{
+		background-image: url('../assets/animation-sequence/frame8.png');
+	}
+	35%{
+		background-image: url('../assets/animation-sequence/frame8.png');
+	}
+	45%{
+		background-image: url('../assets/animation-sequence/frame8.png');
+		opacity: 0;
+	}
+	100%{
+		background-image: url('../assets/animation-sequence/frame8.png');
+		opacity: 0;
+	}
+}
+
 #homeHeader1
 {
 	display: flex;
@@ -114,7 +163,7 @@ h2
 	position: relative;
 	height: 220px;
 	width: 800px;
-	margin-top: 240px;
+	margin-top: 40px;
 }
 
 #homeText
@@ -624,16 +673,12 @@ h2
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-}
-
-#adText
-{
 	margin-top: 20px;
 	position: relative;
 	text-align: center;
 }
 
-#adText h3
+#fundText h3
 {
 	margin-top: 5px;
 	font-size: 28px;
@@ -787,7 +832,6 @@ h2
 	text-align: left;
 	position: relative;
 	display: flex;
-	flex-wrap: all;
 	margin-right: 80px;
 	margin-top: 20px;
 }
@@ -897,15 +941,10 @@ h2
 	opacity: .8;
 }
 
-#submitButton p
-{
-	color: #fff;
-	size: 40px;
-	font-family: 'Montserrat', sans-serif;
-}
-
 button
 {
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
 	width: 1190px;
 	height: 50px;
 	background: rgb(125,126,125);
@@ -956,14 +995,32 @@ button
 
 footer
 {
-	height: 200px;
+	display: flex;
+	flex-direction: column;
 }
 
-footer img
+#footerNav img
 {
 	position: absolute;
 	height: 200px;
 	width: 1366px;
+}
+
+#infographics
+{
+	display: flex;
+	flex-direction: row;
+}
+
+#infographics img
+{
+	height: 260px;
+	width: 340px;
+}
+
+#infographics img:first-child
+{
+	width: 345px;
 }
 
 #footerNav
@@ -979,6 +1036,7 @@ footer img
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
+	position: relative;
 	margin-top: 90px;
 }
 
