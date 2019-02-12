@@ -624,16 +624,12 @@ h2
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-}
-
-#adText
-{
 	margin-top: 20px;
 	position: relative;
 	text-align: center;
 }
 
-#adText h3
+#fundText h3
 {
 	margin-top: 5px;
 	font-size: 28px;
@@ -787,7 +783,6 @@ h2
 	text-align: left;
 	position: relative;
 	display: flex;
-	flex-wrap: all;
 	margin-right: 80px;
 	margin-top: 20px;
 }
@@ -897,15 +892,10 @@ h2
 	opacity: .8;
 }
 
-#submitButton p
-{
-	color: #fff;
-	size: 40px;
-	font-family: 'Montserrat', sans-serif;
-}
-
 button
 {
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
 	width: 1190px;
 	height: 50px;
 	background: rgb(125,126,125);
@@ -956,14 +946,32 @@ button
 
 footer
 {
-	height: 200px;
+	display: flex;
+	flex-direction: column;
 }
 
-footer img
+#footerNav img
 {
 	position: absolute;
 	height: 200px;
 	width: 1366px;
+}
+
+#infographics
+{
+	display: flex;
+	flex-direction: row;
+}
+
+#infographics img
+{
+	height: 260px;
+	width: 340px;
+}
+
+#infographics img:first-child
+{
+	width: 345px;
 }
 
 #footerNav
@@ -979,6 +987,7 @@ footer img
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
+	position: relative;
 	margin-top: 90px;
 }
 
