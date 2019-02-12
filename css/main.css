@@ -102,6 +102,7 @@ h2
 	opacity: .6;
 	width: 350px;
 	height: 25px;
+	padding-left: 10px;
 }
 
 #homeHeader2
@@ -556,7 +557,7 @@ h2
 .joinUsCon
 {
 	margin-top: 160px;
-	height: 600px;
+	height: 620px;
 }
 
 .joinUsCon p
@@ -807,7 +808,7 @@ h2
 
 .contactCon
 {
-	height: 700px;
+	height: 1000px;
 	display: flex;
 	flex-direction: column;
 }
@@ -821,6 +822,7 @@ h2
 {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-evenly;
 	margin: 40px;
 }
 
@@ -832,11 +834,11 @@ h2
 #formSide1 input
 {
 	height: 30px;
-	width: 300px;
+	width: 268px;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	padding-left: 20px;
-	margin-left: 20px;
+	margin-left: 10px;
 }
 
 #formSide1
@@ -851,13 +853,145 @@ h2
 	flex-direction: row;
 }
 
+#formRow1 input
+{
+	box-shadow: 3px 5px inset #ccc;
+}
+
 #formRow2 input
 {
-	width: 645px;
+	width: 570px;
+	box-shadow: 3px 5px inset #ccc;
 }
 
 #formRow3 input
 {
-	width: 645px;
+	width: 570px;
+	box-shadow: 3px 5px inset #ccc;
 }
 
+#formSide2 textarea
+{
+	width: 530px;
+	height: 145px;
+	padding-top: 20px;
+	padding-left: 20px;
+	box-shadow: 3px 5px inset #ccc;
+}
+
+::placeholder
+{
+	font-family: arial, sans-serif;
+	font-size: 16px;
+}
+
+#submitButton
+{
+	display: flex;
+	justify-content: center;
+	transition: 1s;
+}
+
+#submitButton:hover
+{
+	opacity: .8;
+}
+
+#submitButton p
+{
+	color: #fff;
+	size: 40px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+button
+{
+	width: 1190px;
+	height: 50px;
+	background: rgb(125,126,125);
+	background: -moz-linear-gradient(top, rgb(125,126,125) 0%, rgb(14,14,14) 100%);
+	background: -webkit-linear-gradient(top, rgb(125,126,125) 0%,rgb(14,14,14) 100%);
+	background: linear-gradient(to bottom, rgb(125,126,125) 0%,rgb(14,14,14) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 );
+	/*gradient code src:http://www.colorzilla.com/gradient-editor/*/
+}
+
+#contactContent
+{
+	margin-top: 60px;
+	display: flex;
+	flex-direction: row;
+}
+
+.mapArea
+{
+	filter: grayscale(90%);
+}
+
+.meetingInfo
+{
+	background-color: #ccc;
+	width: 683px;
+	height: 280px;
+	padding: 40px;
+	padding-top: 80px;
+}
+
+.meetingInfo span
+{
+	font-family: 'Montserrat', arial, sans-serif;
+	font-size: 28px;
+	font-weight: bold;
+	color: #444;
+}
+.meetingInfo p
+{
+	margin-top: 25px;
+	font-family: 'Montserrat', arial, sans-serif;
+	font-size: 20px;
+	color: #666;
+}
+
+/*Footer*/
+
+footer
+{
+	height: 200px;
+}
+
+footer img
+{
+	position: absolute;
+	height: 200px;
+	width: 1366px;
+}
+
+#footerNav
+{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#footerNav ul
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin-top: 90px;
+}
+
+#footerNav ul li a
+{
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 24px;
+	margin: 35px;
+	transition: .5s;
+}
+
+#footerNav ul li a:hover
+{
+	color: #999;
+}
